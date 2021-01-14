@@ -1,4 +1,4 @@
-# DGT_Extra_Craft_datapack
+# DGT_Extra_datapack
 
 ## 数据包使用说明  
 1. 选择所需下载的数据包  

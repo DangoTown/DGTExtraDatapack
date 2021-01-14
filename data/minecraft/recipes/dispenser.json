@@ -1,0 +1,36 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"group":"EZ_crafting",
+	"pattern":[
+		" 23",
+		"456",
+		" 89"
+	],
+	"key":{
+		"2":{
+			"item":"minecraft:stick"
+		},
+		"3":{
+			"item":"minecraft:string"
+		},
+		"4":{
+			"item":"minecraft:stick"
+		},
+		"5":{
+			"item":"minecraft:dropper"
+		},
+		"6":{
+			"item":"minecraft:string"
+		},
+		"8":{
+			"item":"minecraft:stick"
+		},
+		"9":{
+			"item":"minecraft:string"
+		}
+	},
+	"result":{
+		"item":"minecraft:dispenser",
+		"count":1
+	}
+}
