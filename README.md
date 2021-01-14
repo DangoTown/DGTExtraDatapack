@@ -1,5 +1,10 @@
 # DGT_Extra_datapack
 
+## 关于数据包参考资料
+1. 部分内容（ezcraft） 来源于 [新兵Sinbing]((https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack)
+2. DGT航天人成就参考了TIS外服成就TIS航天人
+3. 鞘翅合成表参考了TIS外服的鞘翅合成表
+
 ## 数据包使用说明  
 1. 选择所需下载的数据包  
    - 如需使用稳定版，请进入[Release页面](https://github.com/huiki/DGT_Extra_Craft_datapack/releases)下载  
