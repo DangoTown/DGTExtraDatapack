@@ -1,0 +1,42 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "extra_crafting",
+	"pattern": [
+		"123",
+		"456",
+		"789"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:gold_block"
+		},
+		"2": {
+			"item": "minecraft:gold_block"
+		},
+		"3": {
+			"item": "minecraft:gold_block"
+		},
+		"4": {
+			"item": "minecraft:gold_block"
+		},
+		"5": {
+			"item": "minecraft:apple"
+		},
+		"6": {
+			"item": "minecraft:gold_block"
+		},
+		"7": {
+			"item": "minecraft:gold_block"
+		},
+		"8": {
+			"item": "minecraft:gold_block"
+		},
+		"9": {
+			"item": "minecraft:gold_block"
+		}
+	},
+	"result": {
+		"item": "minecraft:enchanted_golden_apple",
+		"count": 1
+	}
+}
