@@ -50,11 +50,7 @@
 
 ![](https://s3.ax1x.com/2021/01/15/s0TYhF.png)
 
-<<<<<<< HEAD
 ![](https://s3.ax1x.com/2021/01/15/sB9RmT.png)
-=======
-![](https://s3.ax1x.com/2021/01/15/s0TGkT.png)
->>>>>>> 33224b1bf1f503341cd0502547e05d758bc2b8e1
 
 - 鞘翅合成
 
