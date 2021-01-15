@@ -1,42 +1,42 @@
 {
-	"type":"minecraft:crafting_shaped",
-	"group":"extra_crafting",
-	"pattern":[
+	"type": "minecraft:crafting_shaped",
+	"group": "extra_crafting",
+	"pattern": [
 		"123",
 		"456",
 		"789"
 	],
-	"key":{
-		"1":{
-			"item":"minecraft:phantom_membrane"
+	"key": {
+		"1": {
+			"item": "minecraft:phantom_membrane"
 		},
-		"2":{
-			"item":"minecraft:shulker_shell"
+		"2": {
+			"item": "minecraft:shulker_shell"
 		},
-		"3":{
-			"item":"minecraft:phantom_membrane"
+		"3": {
+			"item": "minecraft:phantom_membrane"
 		},
-		"4":{
-			"item":"minecraft:phantom_membrane"
+		"4": {
+			"item": "minecraft:phantom_membrane"
 		},
-		"5":{
-			"item":"minecraft:leather"
+		"5": {
+			"item": "minecraft:leather"
 		},
-		"6":{
-			"item":"minecraft:phantom_membrane"
+		"6": {
+			"item": "minecraft:phantom_membrane"
 		},
-		"7":{
-			"item":"minecraft:phantom_membrane"
+		"7": {
+			"item": "minecraft:phantom_membrane"
 		},
-		"8":{
-			"item":"minecraft:shulker_shell"
+		"8": {
+			"item": "minecraft:shulker_shell"
 		},
-		"9":{
-			"item":"minecraft:phantom_membrane"
+		"9": {
+			"item": "minecraft:phantom_membrane"
 		}
 	},
-	"result":{
-		"item":"minecraft:elytra",
-		"count":1
+	"result": {
+		"item": "minecraft:elytra",
+		"count": 1
 	}
 }
