@@ -22,43 +22,6 @@
    - 使用命令`/datapack enable`或`/datapack disable`可以分别**启用/禁用**数据包
 
 ## [合成配方展示](https://docs.qq.com/doc/DUEhhQmJMd0ZDUEtr?pub=1&dver=2.1.0)
-- 快速合成发射器
-
-![](https://s3.ax1x.com/2021/01/15/s0TNp4.png)
-
-![](https://s3.ax1x.com/2021/01/15/s0TU1J.png)
-
-- 快速合成箱子
-
-![](https://s3.ax1x.com/2021/01/15/s0Tac9.png)
-
-- 快速合成潜影盒
-
-![](https://s3.ax1x.com/2021/01/15/s0T0n1.png)
-
-- 快速合成楼梯
-
-![](https://s3.ax1x.com/2021/01/15/s0TdXR.png)
-
-- 快速合成半砖
-
-![](https://s3.ax1x.com/2021/01/15/s0TB0x.png)
-
-- 快速合成骨块
-
-![](https://s3.ax1x.com/2021/01/15/s0TJtU.png)
-
-![](https://s3.ax1x.com/2021/01/15/s0TYhF.png)
-
-![](https://s3.ax1x.com/2021/01/15/sB9RmT.png)
-
-- 鞘翅合成
-
-![](https://s3.ax1x.com/2021/01/15/s0T37V.png)
-
-- 附魔金苹果合成
-
-![](https://s3.ax1x.com/2021/01/15/s0T100.png)
 
 ## 关于数据包参考资料
 
