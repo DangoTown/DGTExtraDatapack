@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "excraft",
+    "pattern": [
+      "XAX",
+      "ABA",
+      "XAX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:yellow_wool"
+      },
+      "A": {
+        "item": "minecraft:prismarine_shard"
+      },
+      "B": {
+        "item": "minecraft:prismarine_crystals"
+      }
+    },
+    "result": {
+      "item": "minecraft:sponge",
+      "count":1
+    }
+  }
