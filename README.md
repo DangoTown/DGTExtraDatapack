@@ -22,6 +22,7 @@
    - 使用命令`/datapack enable`或`/datapack disable`可以分别**启用/禁用**数据包
 
 ## 合成配方展示
+### LBS_Ez_Craft_datapack
 - 快速合成发射器
 
 ![](https://s3.ax1x.com/2021/01/15/s0TNp4.png)
@@ -52,19 +53,26 @@
 
 ![](https://s3.ax1x.com/2021/01/15/sB9RmT.png)
 
-- 鞘翅合成
+### XKsmallmap
+- 鞘翅合成<br/>
 
-![](https://i0.hdslb.com/bfs/article/7402c63e0cf8e6ee03ac4667ee991c83400333f6.png)
-
+<img src="https://i0.hdslb.com/bfs/article/7402c63e0cf8e6ee03ac4667ee991c83400333f6.png" width = "270" /><br/>
 - 附魔金苹果合成
 
-![](https://i0.hdslb.com/bfs/article/1795cc7d5f2472d9014807719440d3702d192f22.png)
-
+<img src="https://i0.hdslb.com/bfs/article/1795cc7d5f2472d9014807719440d3702d192f22.png" width = "270" /><br/>
 - 潜影壳合成
 
-![](https://i0.hdslb.com/bfs/article/014a966e77e635238c637979eae0c3380ea94ce2.png)
+<img src="https://i0.hdslb.com/bfs/article/014a966e77e635238c637979eae0c3380ea94ce2.png" width = "270" /><br/>
+
+### DGT_Excraft
+- 海绵
+
+![TD3Tn1.png](https://s4.ax1x.com/2021/12/27/TD3Tn1.png)
+
+- 海洋之心
+
+![TD35c9.png](https://s4.ax1x.com/2021/12/27/TD35c9.png)
 
 ## 关于数据包参考资料
-
 1. 部分内容（ezcraft） 来源于 [新兵Sinbing](https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack) 和 [XeKr](https://space.bilibili.com/5930630) 的 [XKsmallmap.zip/免跑图合成](https://www.bilibili.com/read/cv12992062)
 2. DGT航天人成就参考了TIS外服成就TIS航天人
