@@ -63,7 +63,7 @@
 <img src="https://static-file-hosting.vercel.app/static/dgt/0347aea0bac5ab6ff933010e5612eaae.png" alt="Enchanted golden apple" width=270>
 
 - 潜影壳合成
-- 
+
 <img src="https://static-file-hosting.vercel.app/static/dgt/34d29c506175e5a1cdd3b29b567db7e9.png" alt="Shulker Shell" width=270>
 
 ### DGT_Excraft
