@@ -1,4 +1,4 @@
-name: action-zip
+name: action-zip-release
 
 on: [push]
 jobs:
