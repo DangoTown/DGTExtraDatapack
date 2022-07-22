@@ -2,14 +2,30 @@ name: action-zip
 
 on: [push]
 jobs:
-  package-datapack:
+  build-zip:
+    name: Build and Publish Extension Zip
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: zip
-        uses: montudor/action-zip@v1
+      - name: Checkout # 克隆项目
+        uses: actions/checkout@v2
         with:
-          args: "zip -qq -r ./DGT_Extra_datapack_Actions.zip ./data ./LICENSE ./pack.mcmeta ./pack.png"
-      - uses: actions/upload-artifact@v2
+          persist-credentials: false
+
+      - name: Install and Build # 安装依赖
+        run:
+          yarn
+          yarn build:all
+
+      - name: Archive Release # 打包文件为 zip
+        uses: thedoctor0/zip-release@master
         with:
-          name: DGT_Extra_datapack_Actions.zip
+          filename: 'DGT_Extra_datapack_Actions.zip'
+          path: 'data LICENSE pack.mcmeta pack.png'
+
+      # - name: Upload Release # 发布到 Release
+      #   uses: ncipollo/release-action@v1
+      #   with:
+      #     allowUpdates: true # 因为之前已经创建了 Release，所以要进行更新
+      #     omitName: true # 更新的时候不改变 Release 的名字
+      #     artifacts: 'DGT_Extra_datapack_Actions.zip' # 多个文件逗号分开
+      #     token: ${{ secrets.GIT_TOKEN }} # https://github.com/settings/tokens 只选 repo 就行
