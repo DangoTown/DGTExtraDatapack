@@ -4,7 +4,7 @@
       "item": "minecraft:firework_rocket"
     },
     "title": "DGT航天人",
-    "description": "飞越卡门线(1w)",
+    "description": "飞越卡门线(5w)",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
@@ -18,19 +18,24 @@
         "location": {
           "position": {
             "y": {
-              "min": 10000,
-              "max": 10999
+              "min": 50000,
+              "max": 50999
             }
           }
         }
       }
+    },
+    "wearing_elytra": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "delta": -1,
+        "item": {
+          "items": ["minecraft:elytra"]
+        }
+      }
     }
   },
-  "requirements": [
-    [
-      "fly_high"
-    ]
-  ],
+  "requirements": [["fly_high"], ["wearing_elytra"]],
   "rewards": {
     "experience": 500
   }
