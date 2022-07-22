@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: action-zip
-      run: zip -r DGT_Extra_datapack_Actions.zip ./
+      run: zip -r DGT_Extra_datapack_Actions.zip ./data ./LICENSE ./pack.mcmeta pack.png
