@@ -11,10 +11,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build # 安装依赖
-        run:
-          yarn
-          yarn build:all
+      # - name: Install and Build # 安装依赖
+      #   run:
+      #     yarn
+      #     yarn build:all
 
       - name: Archive Release # 打包文件为 zip
         uses: thedoctor0/zip-release@master
