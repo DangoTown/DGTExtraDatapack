@@ -11,16 +11,17 @@ jobs:
         with:
           persist-credentials: false
 
-      # - name: Install and Build # 安装依赖
-      #   run:
-      #     yarn
-      #     yarn build:all
-
       - name: Archive Release # 打包文件为 zip
         uses: thedoctor0/zip-release@master
         with:
           filename: 'DGT_Extra_datapack_Actions.zip'
           path: 'data LICENSE pack.mcmeta pack.png'
+
+      - name: Upload Artifact #上传输出文件
+        uses: actions/upload-artifact@v2
+        with:
+          name: action-zip-release
+          path: 'DGT_Extra_datapack_Actions.zip'
 
       # - name: Upload Release # 发布到 Release
       #   uses: ncipollo/release-action@v1
