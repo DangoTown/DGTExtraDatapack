@@ -1,6 +1,9 @@
 name: release-zip-release
 
-on: [push]
+on:
+  release: # 发布 Release 后才会运行
+    types: [published]
+
 jobs:
   build-zip:
     name: Build and Publish Extension Zip
