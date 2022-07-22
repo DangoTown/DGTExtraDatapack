@@ -8,7 +8,11 @@
         {
             "item": "minecraft:sugar_cane"
         },
+<<<<<<< HEAD
         {
+=======
+                {
+>>>>>>> 49c017e9960014af351b45de729f6a72ea802c4f
             "item": "minecraft:sugar_cane"
         }
     ],

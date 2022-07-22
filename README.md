@@ -56,15 +56,15 @@
 ### XKsmallmap
 - 鞘翅合成
 
-![Elytra](https://static-file-hosting.vercel.app/static/dgt/e1e86ee7743c1440a5ba2c7dd12613dc.png)
+<img src="https://static-file-hosting.vercel.app/static/dgt/e1e86ee7743c1440a5ba2c7dd12613dc.png" alt="Elytra" width=270><br>
 
 - 附魔金苹果合成
 
-![Enchanted_golden_apple](https://static-file-hosting.vercel.app/static/dgt/0347aea0bac5ab6ff933010e5612eaae.png)
+<img src="https://static-file-hosting.vercel.app/static/dgt/0347aea0bac5ab6ff933010e5612eaae.png" alt="Enchanted golden apple" width=270>
 
 - 潜影壳合成
-
-![Shulker_shell](https://static-file-hosting.vercel.app/static/dgt/34d29c506175e5a1cdd3b29b567db7e9.png)
+- 
+<img src="https://static-file-hosting.vercel.app/static/dgt/34d29c506175e5a1cdd3b29b567db7e9.png" alt="Shulker Shell" width=270>
 
 ### DGT_Excraft
 - 海绵
