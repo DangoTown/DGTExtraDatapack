@@ -5,7 +5,5 @@ jobs:
   package-datapack:
     runs-on: ubuntu-latest
     steps:
-      - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r ./
-      
+    - name: action-zip
+      run: zip -r DGT_Extra_datapack_Actions.zip ./
