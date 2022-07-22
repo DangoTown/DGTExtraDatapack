@@ -5,5 +5,11 @@ jobs:
   package-datapack:
     runs-on: ubuntu-latest
     steps:
-    - name: action-zip
-      run: zip -r DGT_Extra_datapack_Actions.zip ./data ./LICENSE ./pack.mcmeta pack.png
+      - uses: actions/checkout@v2
+      - name: zip
+        uses: montudor/action-zip@v1
+        with:
+          args: "zip -qq -r ./DGT_Extra_datapack_Actions.zip ./data ./LICENSE ./pack.mcmeta ./pack.png"
+      - uses: actions/upload-artifact@v2
+        with:
+          name: DGT_Extra_datapack_Actions.zip
