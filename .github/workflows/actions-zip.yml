@@ -1,6 +1,8 @@
 name: action-zip-release
 
-on: [push]
+on:
+  push:
+    branches: [main]
 jobs:
   build-zip:
     name: Build and Publish Extension Zip

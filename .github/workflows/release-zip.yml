@@ -21,7 +21,7 @@ jobs:
           path: 'data LICENSE pack.mcmeta pack.png'
 
       - name: Upload Release # 发布到 Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.10.0
         with:
           allowUpdates: true # 因为之前已经创建了 Release，所以要进行更新
           omitName: true # 更新的时候不改变 Release 的名字
