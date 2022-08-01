@@ -3,40 +3,45 @@
     "icon": {
       "item": "minecraft:firework_rocket"
     },
-    "title": "DGT航天人",
-    "description": "飞越卡门线(3w)",
+    "title": {
+      "text": "DGT航天人",
+      "color": "light_purple",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "description": "飞越卡门线 - 30000m",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "parent": "minecraft:end/elytra",
   "criteria": {
-    "fly_high": {
+    "requirement": {
       "trigger": "minecraft:location",
       "conditions": {
-        "location": {
-          "position": {
-            "y": {
-              "min": 30000,
-              "max": 30999
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": 30000
+              }
             }
           }
-        }
-      }
-    },
-    "wearing_elytra": {
-      "trigger": "minecraft:item_durability_changed",
-      "conditions": {
-        "delta": -1,
-        "item": {
-          "items": ["minecraft:elytra"]
-        }
+        ]
       }
     }
   },
-  "requirements": [["fly_high"], ["wearing_elytra"]],
+  "requirements": [
+    [
+      "hight_is_enough"
+    ]
+  ],
   "rewards": {
-    "experience": 300
+    "experience": 1000
   }
 }
