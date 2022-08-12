@@ -1,7 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group":"paper",
-    "ingredients":[
+    "ingredients": [
         {
             "item": "minecraft:sugar_cane"
         },
@@ -13,8 +12,7 @@
         }
     ],
     "result": {
-      "item": "minecraft:paper",
-      "count": 3
+        "item": "minecraft:paper",
+        "count": 3
     }
-  }
-  
+}
