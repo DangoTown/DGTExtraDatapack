@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "minecraft:oak_sapling"
+        "tag": "minecraft:saplings"
     },
     "result": "minecraft:dead_bush",
     "experience": 0.1,
