@@ -17,7 +17,7 @@ jobs:
       - name: Archive Release # 打包文件为 zip
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'DGT_Extra_datapack_Release.zip'
+          filename: 'DGTExtra_datapack_${{ github.event.release.tag_name }}.zip'
           path: 'data LICENSE pack.mcmeta pack.png'
 
       - name: Upload Release # 发布到 Release
@@ -26,5 +26,5 @@ jobs:
           allowUpdates: true # 因为之前已经创建了 Release，所以要进行更新
           omitName: true # 更新的时候不改变 Release 的名字
           omitBody: true #更新時不改变 Release 描述
-          artifacts: 'DGT_Extra_datapack_Release.zip' # 多个文件逗号分开
+          artifacts: 'DGTExtra_datapack_${{ github.event.release.tag_name }}.zip' # 多个文件逗号分开
           token: ${{ secrets.GIT_TOKEN }} # https://github.com/settings/tokens 只选 repo 就行
