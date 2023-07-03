@@ -3,7 +3,7 @@
 ## 关于数据包参考资料
 
 1. 部分内容（ezcraft） 来源于 [新兵Sinbing](https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack)
-3. 附魔金苹果和潜影壳合成使用XeKr的数据包
+2. 附魔金苹果和潜影壳合成使用XeKr的数据包
 
 ## 数据包使用说明
 1. 选择所需下载的数据包
@@ -21,6 +21,8 @@
    - 使用命令`/datapack enable`或`/datapack disable`可以分别**启用/禁用**数据包
 
 ## 合成配方展示
+<details> <summary> 展开 </summary>
+
 ### LBS_Ez_Craft_datapack
 快速合成发射器<br/>
 ![Dispenser_1](https://static.rtast.cn/static/dgt/dfde76747d5d4d2a74fd3e4488fa6d85.png)<br/>
@@ -77,6 +79,8 @@
 
 枯萎的灌木 > 熔炉烧炼<br/>
 ![dead_bush](https://s2.loli.net/2023/06/30/3MFDQbx7NIyGvw9.png "支持输入任意树苗(#minecraft:saplings)")
+
+</details>
 
 ## 关于数据包参考资料
 部分内容（ezcraft） 来源于 [新兵Sinbing](https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack) 和 [XeKr](https://space.bilibili.com/5930630) 的 [XKsmallmap.zip/免跑图合成](https://www.bilibili.com/read/cv12992062)
