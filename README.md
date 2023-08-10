@@ -20,6 +20,12 @@
    - 如返回已启用数据包中包含`[file/DGT_Extra_Craft_datapack]`则安装成功
    - 使用命令`/datapack enable`或`/datapack disable`可以分别**启用/禁用**数据包
 
+## 记分板
+新增记分板`minecounter`，使用以下指令在侧边栏显示挖掘榜
+```
+/scoreboard objectives setdisplay sidebar minecounter
+```
+
 ## 合成配方展示
 <details> <summary> 展开 </summary>
 
