@@ -9,7 +9,6 @@ scoreboard objectives add used_netherite_shovel minecraft.used:netherite_shovel
 scoreboard objectives add minecounter_diamond dummy
 scoreboard objectives add minecounter_netherite dummy
 
-
 scoreboard objectives add minecounter_t dummy
 scoreboard objectives add minecounter dummy "挖掘榜"
 
