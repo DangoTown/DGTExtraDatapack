@@ -1,5 +1,5 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
     "has_lots_of_items": {
       "trigger": "minecraft:inventory_changed",
@@ -14,7 +14,7 @@
   },
   "rewards": {
     "recipes": [
-      "ezcraft:log_to_chest"
+      "dgted:log_to_chest"
     ]
   }
 }
