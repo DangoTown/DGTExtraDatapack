@@ -1,5 +1,5 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
     "have_dropper": {
       "trigger": "minecraft:inventory_changed",
@@ -14,7 +14,7 @@
   },
   "rewards": {
     "recipes": [
-      "ezcraft:ez_dispenser"
+      "dgted:ez_dispenser"
     ]
   }
 }
