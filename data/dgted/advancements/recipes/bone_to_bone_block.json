@@ -1,5 +1,5 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
     "have_bone": {
       "trigger": "minecraft:inventory_changed",
@@ -14,7 +14,7 @@
   },
   "rewards": {
     "recipes": [
-      "ezcraft:bone_to_bone_block2"
+      "dgted:bone_to_bone_block"
     ]
   }
 }

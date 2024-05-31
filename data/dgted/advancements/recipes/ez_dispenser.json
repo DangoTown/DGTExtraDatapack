@@ -1,0 +1,20 @@
+{
+  "parent": "dgted:recipes/root",
+  "criteria": {
+    "have_dropper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dropper"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "dgted:ez_dispenser"
+    ]
+  }
+}

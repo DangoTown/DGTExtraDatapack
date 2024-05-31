@@ -1,20 +1,20 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
-    "have_logs": {
+    "has_lots_of_items": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
-          {
-            "tag": "minecraft:logs"
+        "slots": {
+          "occupied": {
+            "min": 10
           }
-        ]
+        }
       }
     }
   },
   "rewards": {
     "recipes": [
-      "ezcraft:log_to_stick"
+      "dgted:log_to_chest"
     ]
   }
 }

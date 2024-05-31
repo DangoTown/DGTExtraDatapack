@@ -1,12 +1,12 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
-    "have_bone": {
+    "have_shulker_shell": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:bone"
+            "item": "minecraft:shulker_shell"
           }
         ]
       }
@@ -14,7 +14,7 @@
   },
   "rewards": {
     "recipes": [
-      "ezcraft:bone_to_bone_block"
+      "dgted:ez_shulker_box"
     ]
   }
 }

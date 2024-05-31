@@ -1,13 +1,8 @@
 # DGT_Extra_datapack
 
-## 关于数据包参考资料
-
-1. 部分内容（ezcraft） 来源于 [新兵Sinbing](https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack)
-2. 附魔金苹果和潜影壳合成使用XeKr的数据包
-
 ## 数据包使用说明
 1. 选择所需下载的数据包
-   - 如需使用稳定版，请进入[Release页面](https://github.com/DangoTown/DGT_Extra_datapack/releases)下载
+   - 如需使用稳定版，请进入[Release页面](https://github.com/DangoTown/DGTExtraDatapack/releases)下载
    - 如需调试最新版（可能不稳定），请直接将源码Clone到存档数据包文件夹中
 
 2. 将数据包下载到存档数据包文件夹中
@@ -87,6 +82,3 @@
 ![dead_bush](https://s2.loli.net/2023/06/30/3MFDQbx7NIyGvw9.png "支持输入任意树苗(#minecraft:saplings)")
 
 </details>
-
-## 关于数据包参考资料
-部分内容（ezcraft） 来源于 [新兵Sinbing](https://space.bilibili.com/1446187/) 的 [LBS_Ez_Craft_datapack](https://github.com/Sinbing/LBS_Ez_Craft_datapack) 和 [XeKr](https://space.bilibili.com/5930630) 的 [XKsmallmap.zip/免跑图合成](https://www.bilibili.com/read/cv12992062)

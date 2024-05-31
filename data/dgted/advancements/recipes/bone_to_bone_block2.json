@@ -1,12 +1,12 @@
 {
-  "parent": "ezcraft:recipes/root",
+  "parent": "dgted:recipes/root",
   "criteria": {
-    "have_dropper": {
+    "have_bone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:dropper"
+            "item": "minecraft:bone"
           }
         ]
       }
@@ -14,7 +14,7 @@
   },
   "rewards": {
     "recipes": [
-      "ezcraft:ez_dispenser"
+      "dgted:bone_to_bone_block2"
     ]
   }
 }
