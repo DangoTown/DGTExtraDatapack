@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-    types:
+    types: 
       - closed
 
 jobs:
@@ -13,41 +13,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
 
-      - name: Extract version from PR title
-        id: extract_version
-        run: echo "::set-output name=version::$(echo ${GITHUB_EVENT_PULL_REQUEST_TITLE} | sed 's/Release //')"
+    - name: Extract version from PR title
+      id: extract_version
+      run: |
+        VERSION=$(echo "${{ github.event.pull_request.title }}" | sed 's/Release //')
+        echo "VERSION=${VERSION}" >> $GITHUB_ENV
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.extract_version.outputs.version }}
-          release_name: Release ${{ steps.extract_version.outputs.version }}
-          body: |
-            This is the release description for version ${{ steps.extract_version.outputs.version }}.
-          draft: false
-          prerelease: false
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.VERSION }}
+        release_name: Release ${{ env.VERSION }}
+        body: |
+          This is the release description for version ${{ env.VERSION }}.
+        draft: false
+        prerelease: false
 
-      - name: Create zip file
-        run: |
-          zip -r DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip data LICENSE pack.mcmeta pack.png README.md
+    - name: Create zip file
+      run: |
+        zip -r DGTExtra_datapack_${{ env.VERSION }}.zip data LICENSE pack.mcmeta pack.png README.md
 
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip
-          asset_name: DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip
-          asset_content_type: application/zip
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./DGTExtra_datapack_${{ env.VERSION }}.zip
+        asset_name: DGTExtra_datapack_${{ env.VERSION }}.zip
+        asset_content_type: application/zip
