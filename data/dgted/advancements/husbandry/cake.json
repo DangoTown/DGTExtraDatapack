@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "item": "minecraft:cake"
+    },
+    "title": "蛋糕是个谎言!",
+    "description": "小麦、糖丶牛奶和鸡蛋!",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "goal"
+  },
+  "criteria": {
+    "cake": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "minecraft:cake"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 201
+  }
+}
