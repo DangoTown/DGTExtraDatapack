@@ -1,0 +1,14 @@
+changelog:
+  exclude:
+    authors:
+      - 'dependabot'
+  categories:
+    - title: 'New'
+      labels:
+        - 'type: feature'
+    - title: 'Fixed'
+      labels:
+        - 'type: bug(fix)'
+    - title: 'Other Changes'
+      labels:
+        - '*'
