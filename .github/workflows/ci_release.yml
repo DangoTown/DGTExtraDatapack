@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, 'Release')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Extract version from PR title
+        id: extract_version
+        run: echo "::set-output name=version::$(echo ${GITHUB_EVENT_PULL_REQUEST_TITLE} | sed 's/Release //')"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.extract_version.outputs.version }}
+          release_name: Release ${{ steps.extract_version.outputs.version }}
+          body: |
+            This is the release description for version ${{ steps.extract_version.outputs.version }}.
+          draft: false
+          prerelease: false
+
+      - name: Create zip file
+        run: |
+          zip -r DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip data LICENSE pack.mcmeta pack.png README.md
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip
+          asset_name: DGTExtra_datapack_${{ steps.extract_version.outputs.version }}.zip
+          asset_content_type: application/zip
