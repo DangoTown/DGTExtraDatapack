@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout # 克隆项目
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
         with:
           persist-credentials: false
 
