@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -27,6 +27,12 @@ jobs:
         VERSION=$(echo "${{ github.event.pull_request.title }}" | sed 's/Release //')
         echo "VERSION=${VERSION}" >> $GITHUB_ENV
 
+    - name: Get PR description
+      id: get_pr_description
+      run: |
+        DESCRIPTION=$(jq -r '.pull_request.body' $GITHUB_EVENT_PATH)
+        echo "DESCRIPTION=${DESCRIPTION}" >> $GITHUB_ENV
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -35,8 +41,7 @@ jobs:
       with:
         tag_name: ${{ env.VERSION }}
         release_name: Release ${{ env.VERSION }}
-        body: |
-          This is the release description for version ${{ env.VERSION }}.
+        body: ${{ env.DESCRIPTION }}
         draft: false
         prerelease: false
 
